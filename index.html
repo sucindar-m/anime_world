@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anime World</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #000;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Anime Cards */
+.anime-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  width: 200px;
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff4b2b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .anime-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>AnimeWorld</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Popular</a>
+    <a href="#">Genres</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Watch Your Favorite Anime</h2>
+  <p>Discover trending anime shows</p>
+  <button onclick="alert('Welcome to AnimeWorld!')">Explore</button>
+</section>
+
+<section class="anime-container">
+
+  <div class="card">
+    <img src="https://cdn.myanimelist.net/images/anime/13/17405.jpg" alt="Naruto">
+    <h3>Naruto</h3>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="Attack on Titan">
+    <h3>Attack on Titan</h3>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Demon Slayer">
+    <h3>Demon Slayer</h3>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn.myanimelist.net/images/anime/6/73245.jpg" alt="One Piece">
+    <h3>One Piece</h3>
+  </div>
+
+</section>
+
+</body>
+</html>
